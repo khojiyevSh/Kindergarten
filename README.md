@@ -1,2 +1,2 @@
-# DemoNajotEdu
+# Kindergarten
 Attendence management service
