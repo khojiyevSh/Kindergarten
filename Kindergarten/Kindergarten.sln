@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kindergarten.Api", "Kindergarten.Api\Kindergarten.Api.csproj", "{D1028F5A-0783-4FCB-A9F9-069137CC721E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1028F5A-0783-4FCB-A9F9-069137CC721E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1028F5A-0783-4FCB-A9F9-069137CC721E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1028F5A-0783-4FCB-A9F9-069137CC721E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1028F5A-0783-4FCB-A9F9-069137CC721E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {602FDCCF-1A29-48BE-AA60-70D100DE0430}
+	EndGlobalSection
+EndGlobal
