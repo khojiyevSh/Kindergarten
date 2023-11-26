@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kindergarten.Api", "Kindergarten.Api\Kindergarten.Api.csproj", "{D1028F5A-0783-4FCB-A9F9-069137CC721E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kindergarten.Api", "Kindergarten.Api\Kindergarten.Api.csproj", "{D1028F5A-0783-4FCB-A9F9-069137CC721E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kindergarten.Domain", "Kindergarten.Domain\Kindergarten.Domain.csproj", "{746DF5A5-1FE3-4F94-ACDA-65BC1D05A05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kindergarten.Infrastucture", "Kindergarten.Infrastucture\Kindergarten.Infrastucture.csproj", "{3A145E8B-D90B-44D8-B170-392E1D9ED022}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D1028F5A-0783-4FCB-A9F9-069137CC721E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1028F5A-0783-4FCB-A9F9-069137CC721E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1028F5A-0783-4FCB-A9F9-069137CC721E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{746DF5A5-1FE3-4F94-ACDA-65BC1D05A05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{746DF5A5-1FE3-4F94-ACDA-65BC1D05A05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{746DF5A5-1FE3-4F94-ACDA-65BC1D05A05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{746DF5A5-1FE3-4F94-ACDA-65BC1D05A05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A145E8B-D90B-44D8-B170-392E1D9ED022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A145E8B-D90B-44D8-B170-392E1D9ED022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A145E8B-D90B-44D8-B170-392E1D9ED022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A145E8B-D90B-44D8-B170-392E1D9ED022}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
