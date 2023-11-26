@@ -1,9 +1,10 @@
-﻿using Kindergarten.Domain.Entities;
+﻿using Kindergarten.Application.Abstractions;
+using Kindergarten.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kindergarten.Infrastucture.Persistance
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
 
         public DbSet<User>? Users { get; set; }
