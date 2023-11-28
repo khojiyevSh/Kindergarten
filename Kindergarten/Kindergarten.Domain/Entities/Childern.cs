@@ -22,6 +22,8 @@
 
         public string? MatherNumber { get; set; }
 
+        public bool IsActiveChildern { get; set; }
+
         public int UserId { get; set; }
 
 

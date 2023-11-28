@@ -12,6 +12,8 @@ namespace Kindergarten.Domain.Entities
 
         public string? Email { get; set;}
 
+        public bool IsActiveUser { get; set; }
+
         public Roles Roles { get; set; }
 
 

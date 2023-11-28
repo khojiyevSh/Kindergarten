@@ -15,11 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Kindergarten.Application\Kindergarten.Application.csproj" />
     <ProjectReference Include="..\Kindergarten.Infrastucture\Kindergarten.Infrastucture.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
