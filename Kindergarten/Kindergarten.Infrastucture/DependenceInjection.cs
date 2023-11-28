@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Kindergarten.Infrastucture
 {
-    public static class DependencyInjection 
+    public static class DependenceInjection 
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
@@ -57,7 +57,16 @@ namespace Kindergarten.Infrastucture
                     polisy.RequireClaim("Roles", Domain.Enums.Roles.Teacher.ToString());
                 });
             });
+            
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("ChildernActions", polisy =>
+                {
+                    polisy.RequireClaim("Roles", Domain.Enums.Roles.Childern.ToString());
+                });
+            });
 
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
             return services;
         }

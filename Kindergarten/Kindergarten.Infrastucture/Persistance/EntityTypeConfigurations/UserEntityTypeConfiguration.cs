@@ -17,6 +17,8 @@ namespace Kindergarten.Infrastucture.Persistance.EntityTypeConfigurations
             builder.HasOne(c => c.Teacher)
                    .WithOne(u => u.User)
                    .HasForeignKey<Teacher>(x => x.UserId);
+
+            builder.Property(u => u.UserName).IsUnicode();
         }
     }
 }

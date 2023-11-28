@@ -20,6 +20,8 @@
 
         public string? PhoneNumber { get; set; }
 
+        public bool IsActiveTeacher { get; set; }
+
         public int UserId { get; set; }
 
 

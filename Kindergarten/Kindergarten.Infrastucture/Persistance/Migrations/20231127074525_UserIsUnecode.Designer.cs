@@ -3,6 +3,7 @@ using System;
 using Kindergarten.Infrastucture.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Kindergarten.Infrastucture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231127074525_UserIsUnecode")]
+    partial class UserIsUnecode
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,9 +66,6 @@ namespace Kindergarten.Infrastucture.Migrations
 
                     b.Property<string>("FirstName")
                         .HasColumnType("text");
-
-                    b.Property<bool>("IsActiveChildern")
-                        .HasColumnType("boolean");
 
                     b.Property<string>("LastName")
                         .HasColumnType("text");
@@ -197,9 +196,6 @@ namespace Kindergarten.Infrastucture.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("text");
 
-                    b.Property<bool>("IsActiveTeacher")
-                        .HasColumnType("boolean");
-
                     b.Property<string>("LastName")
                         .HasColumnType("text");
 
@@ -257,9 +253,6 @@ namespace Kindergarten.Infrastucture.Migrations
 
                     b.Property<string>("Email")
                         .HasColumnType("text");
-
-                    b.Property<bool>("IsActiveUser")
-                        .HasColumnType("boolean");
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("text");

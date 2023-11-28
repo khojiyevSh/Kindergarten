@@ -13,6 +13,8 @@ namespace Kindergarten.Infrastucture.Persistance.EntityTypeConfigurations
             builder.HasMany(g => g.Groups)
                   .WithOne(t => t.Teacher)
                   .HasForeignKey(t => t.TeacherId);
+
+           // builder.HasQueryFilter(x => x.IsActiveTeacher);
         }
     }
 }
