@@ -20,6 +20,7 @@
 
         public int TeacherId { get; set; }
 
+        public bool IsActive { get; set; }
 
         public Teacher? Teacher { get; set; }
 

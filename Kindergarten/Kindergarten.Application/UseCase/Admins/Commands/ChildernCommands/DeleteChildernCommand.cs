@@ -20,12 +20,12 @@ namespace Kindergarten.Application.UseCase.Admins.Commands.ChildernCommands
 
         public async Task<int> Handle(DeleteChildernCommand request, CancellationToken cancellationToken)
         {
-            var childern = await _context.Childerns.Include(u=>u.User)
+            var childern = await _context.Childerns!.Include(u=>u.User)
                                                    .FirstOrDefaultAsync(x=>x.Id == request.Id,cancellationToken);
 
             if (childern == null)
             {
-                if(!childern!.IsActiveChildern)
+                if(!childern.IsActiveChildern)
                 {
                     throw new AlreadyDeleteException(new NotFoundException());
                 }
@@ -35,7 +35,7 @@ namespace Kindergarten.Application.UseCase.Admins.Commands.ChildernCommands
             childern.IsActiveChildern = false;
             childern.User!.IsActiveUser = false;
 
-            _context.Childerns.Update(childern);
+            _context.Childerns!.Update(childern);
             await _context.SaveChangesAsync(cancellationToken);
 
             return childern.Id;

@@ -17,6 +17,8 @@
 
         public int GroupId { get; set; }
 
+        public bool IsTrainningTime { get; set; }
+
 
         public Group? Group { get; set; }
 

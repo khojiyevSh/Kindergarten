@@ -21,6 +21,8 @@ namespace Kindergarten.Infrastucture.Persistance.EntityTypeConfigurations
             builder.HasMany(c=>c.ChildernGroups)
                    .WithOne(g => g.Group)
                    .HasForeignKey(g => g.GroupId);
+
+            builder.Property(x => x.Name).IsUnicode();
         }
     }
 }
