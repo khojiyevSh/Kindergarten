@@ -1,6 +1,6 @@
 ﻿using Kindergarten.Application.Abstractions;
 using Kindergarten.Application.Exceptions;
-using Kindergarten.Application.Models;
+using Kindergarten.Application.Models.GroupModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kindergarten.Application.UseCase.Admins.Queries.GroupQueries

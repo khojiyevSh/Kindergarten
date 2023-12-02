@@ -25,7 +25,7 @@ namespace Kindergarten.Api.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteGroupAsync(DeleteGroupCommand command)
+        public async Task<IActionResult> DeleteGroupAsync([FromForm] DeleteGroupCommand command)
         {
             var response = await _mediator.Send(command);
 
