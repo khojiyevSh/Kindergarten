@@ -1,6 +1,6 @@
 ﻿using Kindergarten.Domain.Enums;
 
-namespace Kindergarten.Application.Models
+namespace Kindergarten.Application.Models.GroupModels
 {
     public class GroupViewModel
     {

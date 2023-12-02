@@ -1,5 +1,5 @@
 ﻿using Kindergarten.Application.Abstractions;
-using Kindergarten.Application.Models;
+using Kindergarten.Application.Models.GroupModels;
 using Kindergarten.Domain.Entities;
 using Kindergarten.Domain.Enums;
 
@@ -101,7 +101,6 @@ namespace Kindergarten.Application.UseCase.Admins.Commands.GroupCommands
                     break;
                 }
             }
-
 
             await _context.GroupPrices!.AddRangeAsync(groupPriceList);
             await _context.SaveChangesAsync(cancellationToken);

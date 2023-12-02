@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kindergarten.Application.Abstractions
 {
-    public interface IApplicationDbContext 
+    public interface IApplicationDbContext
     {
         DbSet<User> Users { get; set; }
         DbSet<Teacher> Teachers { get; set; }
@@ -14,6 +14,6 @@ namespace Kindergarten.Application.Abstractions
         DbSet<TrainingTime> TrainingTimes { get; set; }
         DbSet<ChildernGroup> ChildernGroups { get; set; }
 
-         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

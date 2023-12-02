@@ -14,6 +14,8 @@
 
         public int MaxChildCount { get; set; }
 
+        public int IsHowManyCount { get; set; }
+
         public DateTime StartData { get; set; }
 
         public DateTime EndData { get; set; }

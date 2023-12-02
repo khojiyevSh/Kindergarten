@@ -1,6 +1,6 @@
 ﻿using Kindergarten.Application.Abstractions;
 using Kindergarten.Application.Exceptions;
-using Kindergarten.Application.Models;
+using Kindergarten.Application.Models.GroupModels;
 using Kindergarten.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -41,7 +41,7 @@ namespace Kindergarten.Application.UseCase.Admins.Commands.GroupCommands
                 throw new NotFoundException();
             }
 
-            group.StartData = request.StartData;
+            group!.StartData = request.StartData;
             group.EndData = request.EndData;
             group.IsActive = true;
             group.Name = request.NewName ?? group.Name;

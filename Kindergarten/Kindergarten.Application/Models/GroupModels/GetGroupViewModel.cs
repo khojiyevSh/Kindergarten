@@ -1,4 +1,4 @@
-﻿namespace Kindergarten.Application.Models
+﻿namespace Kindergarten.Application.Models.GroupModels
 {
     public class GetGroupViewModel
     {
